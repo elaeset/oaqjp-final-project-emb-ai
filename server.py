@@ -12,6 +12,7 @@ def emo_detector():
 
     dominant_emotion = response['dominant_emotion']
 
+    # Error handling: blank/invalid input results in dominant_emotion being None
     if dominant_emotion is None:
         return "Invalid text! Please try again!"
 
